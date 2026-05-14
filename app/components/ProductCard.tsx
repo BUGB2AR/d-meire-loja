@@ -15,7 +15,6 @@ export default function ProductCard({ name, price, image, isNew }: any) {
         <p className="uk-margin-remove uk-text-truncate">{name}</p>
         <p className="uk-text-bold uk-margin-remove">R$ {price.toFixed(2)}</p>
         
-        {/* BOTÃO WHATSAPP */}
         <a href={waLink} target="_blank" rel="noopener noreferrer" 
            className="uk-button uk-button-default uk-button-small uk-width-1-1 uk-margin-small-top"
            style={{ borderColor: '#25D366', color: '#128C7E' }}>

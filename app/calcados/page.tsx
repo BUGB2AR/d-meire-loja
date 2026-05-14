@@ -4,7 +4,6 @@ import { PRODUCTS } from "../data/products";
 
 
 export default function CalcadosPage() {
-  // Filtra apenas produtos da categoria calçados
   const calcados = PRODUCTS.filter(p => p.category === 'calcados');
 
   return (

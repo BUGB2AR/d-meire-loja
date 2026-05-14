@@ -3,7 +3,6 @@
 export default function Header() {
   return (
     <>
-      {/* BARRA SUPERIOR */}
       <div className="top-bar uk-light uk-padding-small">
         <div className="uk-container uk-flex uk-flex-between uk-text-small">
           <div>
@@ -17,7 +16,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* HEADER LOGO E BUSCA */}
       <header className="uk-background-default uk-padding">
         <div className="uk-container uk-flex uk-flex-between uk-flex-middle">
           <div className="uk-width-1-4">
@@ -39,7 +37,6 @@ export default function Header() {
         </div>
       </header>
 
-      {/* MENU MOBILE */}
       <div className="uk-text-center uk-padding-small">
         <button className="uk-button uk-button-default" type="button" data-uk-toggle="target: #offcanvas-nav">
           <span data-uk-icon="menu"></span>

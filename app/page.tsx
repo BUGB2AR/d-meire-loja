@@ -15,7 +15,6 @@ export default function HomePage() {
       <Header />
       <Hero />
 
-      {/* BARRA DE BENEFÍCIOS */}
       <div className="uk-section uk-section-xsmall uk-background-default">
         <div className="uk-container">
           <div className="uk-grid-divider uk-child-width-1-3@m uk-text-center" data-uk-grid>
@@ -26,7 +25,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* GRID DE PRODUTOS */}
+
       <section className="uk-section">
         <div className="uk-container">
           <h3 className="uk-text-center uk-text-uppercase uk-margin-large-bottom">Destaques</h3>
