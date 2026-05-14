@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --marrom-primario: #5d3e2d;
+    --marrom-texto: #a0785a;
+    --bege-fundo: #fdfaf5;
+}
+
+body {
+    background-color: var(--bege-fundo);
+    color: #333;
+}
+
+.top-bar {
+    background-color: #222;
+    font-size: 12px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.hero-section {
+    background-color: #f4f1ee;
+    background-position: center;
+}
+
+.hero-section h2 {
+    font-size: 3.5rem !important;
+}
+
+.hero-section p {
+    max-width: 450px;
+}
+
+.product-badge {
+    background-color: var(--marrom-primario) !important;
+}
+
+.hover-shrink {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-shrink:hover {
+    transform: scale(0.95);
+}
+
+.btn-primary {
+    background-color: var(--marrom-primario) !important;
+    color: #fff !important;
+    border: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #4a3224 !important;
+    transform: scale(0.95); 
+}
+
+/* Ajustes gerais */
+.top-bar {
+  background: #333;
+  font-size: 0.85rem;
+}
+
+/* Ícones de conta e carrinho */
+.uk-icon-button {
+  background: transparent;
+  border: none;
+  color: var(--marrom-primario);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.uk-icon-button:hover {
+  color: #4a3224;
+  transform: scale(1.1);
+}
+
+/* Links desktop (ícone + texto) */
+header a[uk-icon] {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+header a[uk-icon]:hover {
+  color: var(--marrom-primario);
+}
+header a[uk-icon] span {
+  margin-left: 6px;
+}
+
+/* Responsividade do header */
+@media (max-width: 768px) {
+  header .uk-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Logo centralizado e menor */
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+
+  /* Ícones alinhados lado a lado */
+  header .uk-width-1-4 {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  /* Input de busca ocupa largura total */
+  header .uk-inline {
+    width: 100%;
+  }
+}
+
+/* Hero section responsivo */
+.hero-section {
+  min-height: 280px;
+  text-align: center;
+  padding: 20px;
+}
+.hero-section h2 {
+  font-size: 2rem !important;
+}
+.hero-section p {
+  max-width: 100%;
+  font-size: 1rem;
+}
+@media (min-width: 960px) {
+  .hero-section {
+    min-height: 500px;
+    text-align: left;
+  }
+  .hero-section h2 {
+    font-size: 3.5rem !important;
+  }
+  .hero-section p {
+    max-width: 450px;
+  }
+}
+
+.uk-section .uk-icon {
+  color: var(--marrom-primario);
+  vertical-align: middle;
+}
+.uk-section div {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+  .uk-section .uk-grid-divider {
+    grid-gap: 15px;
+  }
+  .uk-section div {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Container da imagem do produto para padronizar tamanhos */
+.product-image-container {
+    height: 300px; /* Altura fixa para alinhar todos os produtos */
+    overflow: hidden;
+    background-color: #fff; /* Fundo branco caso a imagem seja menor */
+}
+
+/* Força a imagem a preencher o container sem distorcer */
+.product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a mágica de preencher o espaço cortando sobras */
+    object-position: center;
+}
+
+/* Ajuste fino para o hover não bugar o corte */
+.hover-shrink:hover .product-image-container img {
+    transform: scale(1.05); /* Leve zoom interno ao diminuir o card */
+    transition: transform 0.3s ease;
+}
+
+/* Barra superior */
+.top-bar {
+  background: #333;
+  font-size: 0.75rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .top-bar .uk-container {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Header responsivo */
+@media (max-width: 768px) {
+  header .uk-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 12px; /* espaçamento entre logo, busca e ícones */
+  }
+
+  header .uk-width-1-4 {
+    width: 100% !important;
+    margin-bottom: 8px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  header .uk-inline {
+    width: 100%;
+  }
+
+  /* Ícones lado a lado */
+  header .uk-text-right {
+    justify-content: center;
+    display: flex;
+    gap: 12px;
+  }
+}
+
+/* Menu de navegação */
+@media (max-width: 960px) {
+  nav.uk-navbar-container {
+    display: none; /* esconde o menu padrão */
+  }
+}
+
+#offcanvas-nav .uk-nav li a {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+#offcanvas-nav .uk-nav li a:hover {
+  color: var(--marrom-primario);
+}
+
+#offcanvas-nav .uk-icon {
+  color: var(--marrom-primario);
+}
