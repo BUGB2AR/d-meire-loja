@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --marrom-primario: #5d3e2d;
+  --marrom-texto: #a0785a;
+  --bege-fundo: #fdfaf5;
+}
+
+body {
+  background-color: var(--bege-fundo);
+  color: #333;
+}
+
+.top-bar { background-color: #222; font-size: 12px; }
+.hero-section { background-position: center; }
+.product-badge { background-color: var(--marrom-primario) !important; }
+.hover-shrink { transition: transform 0.3s ease-in-out; }
+.hover-shrink:hover { transform: scale(0.95); }
+
+.btn-primary {
+  background-color: var(--marrom-primario) !important;
+  color: #fff !important;
+  border: none;
+  transition: 0.3s;
+}
+
+.product-image-container {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
